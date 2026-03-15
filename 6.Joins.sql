@@ -16,5 +16,15 @@ JOIN employee_salary AS sal  		-- by default is inner join
     ON dem.employee_id = sal.employee_id
 ; 
 
+-- Outer Joins
+-- LEFT JOIN taking everything left table, and then only returns matches from Right table
+-- VICE versa for RJ
+
+SELECT *
+FROM employee_demographics AS dem   
+LEFT JOIN employee_salary AS sal
+    ON dem.employee_id = sal.employee_id
+; 
+
 
 
