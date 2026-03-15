@@ -8,7 +8,7 @@ FROM employee_salary;
 
 -- Inner Joins to return rows which are same in both columns of both tables
 
-SELECT *
+SELECT dem.employee_id, age, occupation
 FROM employee_demographics AS dem   -- dem and sal is Aliasing
 JOIN employee_salary AS sal  		-- by default is inner join
 	-- gives error due to abuguity does not know which table id
