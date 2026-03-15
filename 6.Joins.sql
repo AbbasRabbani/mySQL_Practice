@@ -26,5 +26,17 @@ LEFT JOIN employee_salary AS sal
     ON dem.employee_id = sal.employee_id
 ; 
 
+SELECT *
+FROM employee_demographics AS dem   
+RIGHT JOIN employee_salary AS sal
+    ON dem.employee_id = sal.employee_id
+; 
 
+-- Self Join is a join tight a table to it self
+
+SELECT *
+FROM employee_salary emp1
+JOIN employee_salary emp2
+	ON  emp1.employee_id + 1  = emp2.employee_id
+;
 
