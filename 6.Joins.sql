@@ -40,3 +40,15 @@ JOIN employee_salary emp2
 	ON  emp1.employee_id + 1  = emp2.employee_id
 ;
 
+-- Joining multi tables together
+-- one table to another to another table 
+
+SELECT *
+FROM employee_demographics AS dem 
+JOIN employee_salary AS sal  		
+    ON dem.employee_id = sal.employee_id
+; 
+
+SELECT * 
+FROM parks_departments
+;
